@@ -1,0 +1,89 @@
+.foods1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#foods1myDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 800px;
+  /* background-color: #f0f0f0; */
+  background-color: rgba(255, 255, 255, 0);
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+
+#foods1myDiv.fullscreen {
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.news1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#news1myDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 800px;
+  /* background-color: #f0f0f0; */
+  background-color: rgba(255, 255, 255, 0);
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+
+#news1myDiv.fullscreen {
+  width: 100vw;
+  height: 100vh;
+}
+
+
+
+.news2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.news3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+}
+
+.news4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+}
+
+.history1 {
+  /* display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; */
+  position: relative;
+  top: 70px;
+  left: -30px;
+}
+
+.news011 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

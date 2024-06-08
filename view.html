@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>梦启航</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CRubik:400,400i,500,700,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://www.jq22.com/jquery/bootstrap-4.2.1.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="https://www.jq22.com/jquery/font-awesome.4.7.0.css">
+    <link rel="stylesheet" href="css/hover-min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="plugins/indext-icons/style.css">
+    <link rel="stylesheet" href="css/nouislider.css">
+    <link rel="stylesheet" href="css/jquery.bootstrap-touchspin.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- <style type="text/css">
+        /*地图的样式*/
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            font-family: "微软雅黑";
+            font-size: 14px;
+        }
+
+        #l-map {
+            height: 380px;
+            width: 100%;
+        }
+
+        #r-result {
+            width: 100%;
+            margin-top: 30px;
+        }
+    </style> -->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=1.4"></script>
+</head>
+
+<body>
+
+    <!-- 加载页面图标 -->
+    <div class="preloader"><span></span></div><!-- /.preloader -->
+    <!-- 加载页面图标 -->
+    <div class="page-wrapper">
+
+        <header class="site-header site-header__header-one site-header__header-five ">
+            <nav class="navbar navbar-expand-lg navbar-light header-navigation stricky">
+                <div class="container clearfix">
+                    <div class="logo-box">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/slider/logo.png" width="150" class="main-logo" alt="Awesome Image" />
+                        </a>
+                        <button class="menu-toggler" data-target=".main-navigation">
+                            <span class="fa fa-bars"></span>
+                        </button>
+                    </div>
+                    <div class="main-navigation">
+                        <ul class=" navigation-box @@extra_class">
+                            <li><a href="index.html">主页</a></li>
+                            <li>
+                                <a href="service.html">迎福归</a>
+
+                            </li>
+                            <li class="current">
+                                <a href="view.html">梦启航</a>
+
+                            </li>
+                            <li>
+                                <a href="foods.html">喜获证</a>
+
+                            </li>
+                            <li>
+                                <a href="news.html">打工记</a>
+
+                            </li>
+                            <li><a href="history.html">差旅毕</a></li>
+                            <li><a href="news0.html">访幕后</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container -->
+            </nav>
+        </header><!-- /.site-header -->
+
+        <!-- 两个大标题 -->
+        <section class="inner-banner1">
+            <!-- 这个是背景图片的css -->
+            <div class="container">
+
+
+                <div class="classer1">
+                    <div>梦启航</div>
+                </div><!-- /.inner-banner__title -->
+                <div class="classer2">
+                    <div class="inner-banner__title2">遨游历史,探寻熊猫外交足迹</div>
+                </div>
+                <div class="block-title text-center">
+
+                    <h5 class="block-title__title ">国宝出海由来已久。回望这段历史，无数前辈们为中外友谊做出卓越贡献。也激励着我，想要和他们一样逐梦远航、乘风破浪！
+
+                    </h5>
+
+                </div><!-- /.block-title -->
+                <!-- 1 -->
+                <div class="row history-one__row">
+                    <span class="history-one__sep"></span><!-- /.pianleft -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="history-one__image wow fadeInLeft">
+                            <img src="images/slider/slider-5-5.png" alt="" width="400">
+                        </div><!-- /.history-one__image -->
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6 col-md-6 d-flex">
+                        <div class="history-one__content my-auto">
+                            <h3 class="history-one__title">
+                                早在唐朝,我们的祖辈——作为“外交大使”的先锋，就曾被皇上武则天送去日本，表达中原对日本的友好。
+                            </h3>
+                            <!-- /.history-one__title -->
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row history-one__row">
+                    <span class="history-one__sep"></span>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="history-one__image wow fadeInRight">
+                            <img src="images/backgrounds/v1.png" alt="" width="450">
+                        </div><!-- /.history-one__image -->
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6 col-md-6 d-flex">
+                        <div class="history-one__content my-auto">
+                            <h3 class="history-one__title">
+                                1941年，宋美龄代表国民政府将一对大熊猫赠送给美国，以答谢美国联合援华会对中国抗日战争的支援，同时也开启了真正意义上的熊猫外交。
+                            </h3>
+                        </div><!-- /.history-one__content -->
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row history-one__row -->
+
+
+                <!-- 
+                <div class="block-title text-center">
+
+                    <h3 class="block-title__title1 ">回望这段历史,无数前辈们为中外友谊做出卓越贡献。也激励着我,想要和他们一样逐梦远航、乘风破浪!
+                        回望这段历史，无数前辈们为中外友谊做出卓越贡献.也激励着我，想要和他们一样逐梦远航、乘风破浪！
+
+
+                    </h3>
+                </div> -->
+
+
+                <!-- 开始 -->
+
+
+
+                <div class="row history-one__row">
+                    <span class="history-one__sep"></span><!-- /.pianleft -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="history-one__image wow fadeInRight" style="border-radius: 50px; overflow: hidden;">
+                            <img src="images/outside_visit/1.jpg" alt="" width="450">
+                        </div>
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6 col-md-6 d-flex">
+                        <div class="history-one__content my-auto">
+                            <h3 class="history-one__title">1972年，中日邦交恢复正常化，赠送康康、兰兰
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="row history-one__row">
+                    <span class="history-one__sep"></span><!-- /.pianleft -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="history-one__image wow fadeInRight" style="border-radius: 50px; overflow: hidden;">
+                            <img src="images/outside_visit/2.png" alt="" width="450">
+                        </div>
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6 col-md-6 d-flex">
+                        <div class="history-one__content my-auto">
+
+                            <h3 class="history-one__title">1972年，中美关系破冰，尼克松访华，赠送兴兴、玲玲</h3>
+                            <!-- /.history-one__title -->
+
+                            <!-- /.history-one__text -->
+                        </div><!-- /.history-one__content -->
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row history-one__row -->
+
+
+
+
+
+                <div class="row history-one__row">
+                    <span class="history-one__sep"></span><!-- /.pianleft -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="history-one__image wow fadeInRight" style="border-radius: 50px; overflow: hidden;">
+                            <img src="images/outside_visit/3.jpg" alt="" width="450">
+                        </div>
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6 col-md-6 d-flex">
+                        <div class="history-one__content my-auto">
+
+                            <h3 class="history-one__title">1982年，在熊猫种群日益减少的背景下，中国政府宣布停止赠送大熊猫，转向租借方式。
+                            </h3>
+                            <!-- /.history-one__title -->
+
+                        </div><!-- /.history-one__content -->
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row history-one__row -->
+
+
+
+
+
+                <div class="row history-one__row">
+                    <span class="history-one__sep"></span><!-- /.pianleft -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="history-one__image wow fadeInRight" style="border-radius: 50px; overflow: hidden;">
+                            <img src="images/outside_visit/4.jpg" alt="" width="450">
+                        </div>
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6 col-md-6 d-flex">
+                        <div class="history-one__content my-auto">
+
+                            <h3 class="history-one__title">1984年，为表达对美国洛杉矶奥运会的支持，租借永永、迎新
+                            </h3>
+                        </div>
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row history-one__row -->
+
+
+
+
+                <div class="row history-one__row">
+                    <span class="history-one__sep"></span><!-- /.pianleft -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="history-one__image wow fadeInRight" style="border-radius: 50px; overflow: hidden;">
+                            <img src="images/outside_visit/5.jpg" alt="" width="450">
+                        </div>
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6 col-md-6 d-flex">
+                        <div class="history-one__content my-auto">
+
+                            <h3 class="history-one__title">2009年，我国访问澳大利亚，租借网网、福妮
+                            </h3>
+                            <!-- /.history-one__title -->
+
+                        </div><!-- /.history-one__content -->
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row history-one__row -->
+
+
+
+
+
+
+                <div class="row history-one__row">
+                    <span class="history-one__sep"></span><!-- /.pianleft -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="history-one__image wow fadeInRight" style="border-radius: 50px; overflow: hidden;">
+                            <img src="images/outside_visit/6.jpg" alt="" width="450">
+                        </div>
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6 col-md-6 d-flex">
+                        <div class="history-one__content my-auto">
+
+                            <h3 class="history-one__title">2012年，中国新加坡建交20周年，租借凯凯、嘉嘉
+                            </h3>
+                        </div>
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row history-one__row -->
+
+
+                <div class="row history-one__row">
+                    <span class="history-one__sep"></span><!-- /.pianleft -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="history-one__image wow fadeInRight" style="border-radius: 50px; overflow: hidden;">
+                            <img src="images/outside_visit/7.jpg" alt="" width="450">
+                        </div>
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6 col-md-6 d-flex">
+                        <div class="history-one__content my-auto">
+                            <h3 class="history-one__title">2013年，中国加拿大建交40周年，租借大毛、二顺
+
+                            </h3>
+                            <!-- /.history-one__title -->
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="row history-one__row">
+                    <span class="history-one__sep"></span><!-- /.pianleft -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="history-one__image wow fadeInRight" style="border-radius: 50px; overflow: hidden;">
+                            <img src="images/outside_visit/8.jpg" alt="" width="450">
+                        </div>
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6 col-md-6 d-flex">
+                        <div class="history-one__content my-auto">
+
+                            <h3 class="history-one__title">2014年，中国马来西亚建交40周年，租借凤仪、福娃
+                            </h3>
+                            <!-- /.history-one__title -->
+
+                            <!-- /.history-one__text -->
+                        </div><!-- /.history-one__content -->
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row history-one__row -->
+
+
+
+
+
+                <div class="row history-one__row">
+                    <span class="history-one__sep"></span><!-- /.pianleft -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="history-one__image wow fadeInRight" style="border-radius: 50px; overflow: hidden;">
+                            <img src="images/outside_visit/9.jpg" alt="" width="450">
+                        </div>
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6 col-md-6 d-flex">
+                        <div class="history-one__content my-auto">
+
+                            <h3 class="history-one__title">2017年，中国荷兰建交45周年，租借星雅、武雯
+                            </h3>
+                            <!-- /.history-one__title -->
+
+                        </div><!-- /.history-one__content -->
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row history-one__row -->
+
+
+
+
+
+                <div class="row history-one__row">
+                    <span class="history-one__sep"></span><!-- /.pianleft -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="history-one__image wow fadeInRight" style="border-radius: 50px; overflow: hidden;">
+                            <img src="images/outside_visit/10.jpg" alt="" width="450">
+                        </div>
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6 col-md-6 d-flex">
+                        <div class="history-one__content my-auto">
+
+                            <h3 class="history-one__title">2017年，中国印度尼西亚建交60周年，租借彩陶、湖春
+                            </h3>
+                        </div>
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row history-one__row -->
+
+
+
+
+                <div class="row history-one__row">
+                    <span class="history-one__sep"></span><!-- /.pianleft -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="history-one__image wow fadeInRight" style="border-radius: 50px; overflow: hidden;">
+                            <img src="images/outside_visit/11.jpg" alt="" width="450">
+                        </div>
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6 col-md-6 d-flex">
+                        <div class="history-one__content my-auto">
+
+                            <h3 class="history-one__title">2019年，丹麦女王玛格丽特二世访华，租借星二、毛笋
+                            </h3>
+                            <!-- /.history-one__title -->
+
+                        </div><!-- /.history-one__content -->
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row history-one__row -->
+
+
+
+
+
+
+                <div class="row history-one__row">
+                    <span class="history-one__sep"></span><!-- /.pianleft -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="history-one__image wow fadeInRight" style="border-radius: 50px; overflow: hidden;">
+                            <img src="images/outside_visit/12.jpg" alt="" width="450">
+                        </div>
+
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6 col-md-6 d-flex">
+                        <div class="history-one__content my-auto">
+
+                            <h3 class="history-one__title">2019年，中俄建交70周年，租借如意、丁丁
+                            </h3>
+                        </div>
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row history-one__row -->
+
+                <div class="row history-one__row">
+                    <span class="history-one__sep"></span><!-- /.pianleft -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="history-one__image wow fadeInRight" style="border-radius: 50px; overflow: hidden;">
+                            <img src="images/outside_visit/13.jpg" alt="" width="450">
+                        </div>
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6 col-md-6 d-flex">
+                        <div class="history-one__content my-auto">
+
+                            <h3 class="history-one__title">2022年，为表达对卡塔尔世界杯的支持，租借京京、四海
+                            </h3>
+                            <!-- /.history-one__title -->
+
+                        </div><!-- /.history-one__content -->
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row history-one__row -->
+                <div style="height: 150px;"></div>
+                <div class="classer9">怎样才能获得令人心动的offer，顺利出使呢？这可是需要经过层层选拔的哦。</div>
+
+
+                <div class="conte">
+                    <a href="foods.html">
+                        <img src="images/backgrounds/v2.png" alt="" width="80">
+                    </a>
+                </div>
+            </div><!-- /.container -->
+        </section><!-- /.inner-banner -->
+
+    </div><!-- /.container -->
+
+
+
+    <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
+    <script src="js/isotope.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <script src="js/nouislider.js"></script>
+    <script src="js/jquery.bootstrap-touchspin.min.js"></script>
+    <script src="js/theme.js"></script>
+
+</body>
+
+</html>

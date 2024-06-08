@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>大熊猫生命阶段条形图</title>
+<style>
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  .bar-container {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: #ddd;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .xinsheng {width: 5%; height: 100%; background-color: #d3d79d; text-align: center;}
+  .youzai { width: 7%; height: 100%; background-color: #d9e67e; text-align: center;}
+  .chengzhang { width: 7%; height: 100%; background-color: #b8d95c; text-align: center;}
+  .yachengnian { width: 17%; height: 100%; background-color: #97c94b; text-align: center;}
+  .chengnian { width: 54%; height: 100%; background-color: #77b83d; text-align: center;}
+  .laonian { width: 10%; height: 100%; background-color: #578b2e; text-align: center;}
+  
+.xinsheng {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* 鼠标悬停时的提示线 */
+}
+.xinsheng .xinshengtext {
+  visibility: hidden;
+  width: 800px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  /* bottom: 100%; */
+  left: 50%;
+  margin-left: 50px;
+  margin-top: 100px;
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+.xinsheng:hover .xinshengtext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.youzai {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* 鼠标悬停时的提示线 */
+}
+.youzai .youzaitext {
+  visibility: hidden;
+  width: 800px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  /* bottom: 100%; */
+  left: 50%;
+  margin-left: 50px;
+  margin-top: 100px;
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+
+.youzai:hover .youzaitext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.chengzhang {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; 
+}
+.chengzhang .chengzhangtext {
+  visibility: hidden;
+  width: 800px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  /* bottom: 100%; */
+  left: 50%;
+  margin-left: 50px;
+  margin-top: 100px;
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+
+.chengzhang:hover .chengzhangtext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.yachengnian {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; 
+}
+.yachengnian .yachengniantext {
+  visibility: hidden;
+  width: 800px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  /* bottom: 100%; */
+  left: 50%;
+  margin-left: 50px;
+  margin-top: 100px;
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+
+.yachengnian:hover .yachengniantext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.chengnian {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+.chengnian .chengniantext {
+  visibility: hidden;
+  width: 800px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  /* bottom: 100%; */
+  left: 50%;
+  margin-left: -350px;
+  margin-top: 100px;
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+
+.chengnian:hover .chengniantext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.laonian {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; 
+}
+.laonian .laoniantext {
+  visibility: hidden;
+  width: 800px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  /* bottom: 100%; */
+  left: 50%;
+  margin-left: -800px;
+  margin-top: 100px;
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+
+.laonian:hover .laoniantext {
+  visibility: visible;
+  opacity: 1;
+}
+</style>
+</head>
+
+<body>
+<div class="bar-container">
+  <div class="xinsheng" ><span>新生期</span>
+    <span class="xinshengtext">
+      年龄：出生至一个月<br>
+      主要特征和发展里程碑：出生体重较轻，约120g，外表像“小老鼠”，皮肤粉色，毛发稀疏
+    </span></div>
+  <div class="youzai" title=""><span>幼崽期</span>
+    <span class="youzaitext">
+      年龄：一个月至三个月。<br>
+      主要特征和发展里程碑：开始长出黑色毛发，两周后黑白分明40天左右开始睁眼
+    </span>
+  </div>
+  <div class="chengzhang" title=""><span>成长期</span>
+    <span class="chengzhangtext">
+      年龄:3个月至六个月。<br>
+      主要特征和发展里程碑：开始活动学习走路和爬树，增强体能和探索能力
+    </span></div>
+  <div class="yachengnian" title=""><span>亚成年期</span>
+    <span class="yachengniantext">
+      年龄：1.5至5岁。<br>
+      主要特征和发展里程碑：长出所有恒牙，食性转为以竹为主，生理和心理主键成熟
+    </span></div>
+  <div class="chengnian" title=""><span>成年期</span>
+    <span class="chengniantext">
+      年龄：5岁以上。<br>
+      主要特征和发展里程碑：开始繁殖，体长可达160-180厘米，体重80-150公斤
+    </span></div>
+  <div class="laonian" title=""><span>老年期</span>    
+    <span class="laoniantext">
+    年龄：18岁以上。<br>
+    主要特征和发展里程碑：在野外寿命一般18-20岁，圈养条件下可达25岁甚至30岁以上
+  </span></div>
+</div>
+</body>
+<script>
+  const infoTip = document.getElementById('infoTip');
+
+  document.querySelectorAll('.bar span').forEach(span => {
+    span.addEventListener('mouseenter', function(event) {
+      // 显示提示框并设置内容
+      infoTip.style.display = 'block';
+      infoTip.textContent = this.textContent + '的详细信息'; // 假设额外信息是阶段名称后面加上"的详细信息"
+      // 根据鼠标位置确定提示框位置
+      infoTip.style.left = event.pageX + 'px';
+      infoTip.style.top = event.pageY + 'px';
+    });
+
+    span.addEventListener('mouseleave', function() {
+      // 鼠标离开span时隐藏提示框
+      infoTip.style.display = 'none';
+    });
+  });
+</script>
+</html>
